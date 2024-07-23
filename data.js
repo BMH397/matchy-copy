@@ -11,20 +11,34 @@
 //////////////////////////////////////////////////////////////////////
 // Step 1 - Object Creation //////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-var object = {};
+var animal = {};
+animal.species = "Dog";  //You can use any species if you want
+animal["name"] = "Charlie";  //This is the name im going to use
+animal.noises = []; //This is the noises with an empty array
+console.log(animal);
 
 
 //////////////////////////////////////////////////////////////////////
 // Step 2 - Array Creation ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
+var noises = [];
+noises[0] = "growl";  //this is my noise
+noises.push("bark");
+noises.unshift("howl");
+noises[noises.length] = "growl";
+console.log(noises.length);
+console.log(noises[noises.length - 1]);
+console.log(noises)
 
 
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Combining Step 1 and 2 ///////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
-
+var animal = {};
+var noises = ["bark", "growl", "howl"]; 
+animal["noises"] = noises;
+animal.noises.push("roar");
+console.log(animal);
 
 /* *******************************************************************
  * Step 4 - Review
