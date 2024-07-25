@@ -12,8 +12,8 @@
 // Step 1 - Object Creation //////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 var animal = {};
-animal.species = "Dog";  //You can use any species if you want
-animal["name"] = "Charlie";  //This is the name im going to use
+animal.species = "dog";  //You can use any species if you want
+animal["name"] = "charlie";  //This is the name im going to use
 animal.noises = []; //This is the noises with an empty array
 console.log(animal);
 
