@@ -34,8 +34,8 @@ console.log(noises)
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Combining Step 1 and 2 ///////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-var animal = {};
-var noises = ["bark", "growl", "howl"]; 
+animal.noises = [];
+var noises = ["bark", "growl", "howl", "whimper", "whine"]; 
 animal["noises"] = noises;
 animal.noises.push("roar");
 console.log(animal);
