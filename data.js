@@ -35,10 +35,10 @@ console.log(noises)
 // Step 3 - Combining Step 1 and 2 ///////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 animal.noises = [];
-var noises = ["bark", "growl", "howl", "whimper", "whine"]; 
+var noises = ["bark", "growl", "howl", "whimper"]; 
 animal["noises"] = noises;
 animal.noises.push("roar");
-console.log(animal);
+console.log(animal.noises.length);
 
 /* *******************************************************************
  * Step 4 - Review
@@ -63,11 +63,73 @@ console.log(animal);
 // Step 6 - A Collection of Animals //////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+//Now lets create a variable named animals and assign it to an empty array
+var animals = [];
+
+//And now lets push animal to animals
+animals.push(animal);
+
+
+//Console.log animals
+console.log(animals);
+
+//Now create a variable called duck and assign it
+var duck = {
+  species: 'duck',
+  name: 'Jerome',
+  noises: ['quack', 'honk', 'sneeze', 'woosh']
+};
+
+//Now lets push duck to animals
+animals.push(duck);
+
+//And again console.log animals
+console.log(animals);
+
+//Now create two more animal objects and add each one of them to animals
+var cat = {
+  species: 'cat',
+  name: 'Wemby',
+  noises: ['meow', 'purr']
+};
+
+var cow = {
+  species: 'cow',
+  name: 'Lenny',
+  noises: ['moo', 'low']
+};
+
+animals.push(cat);
+animals.push(cow);
+
 
 
 //////////////////////////////////////////////////////////////////////
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+
+//I chose an array to hold the list of friends because arrays are ordered collections of items and are easy to change
+
+//Lets create a variable called friends 
+var friends = [];
+
+//Make a function called getRandom that takes our animals array and returns a random index of the input array Math.random
+function getRandom(array) {
+  return Math.floor(Math.random() * array.length);
+}
+
+//Now using a random index from this function get a random animal and add its name to friends
+let randomIndex = getRandom(animals);
+friends.push(animals[randomIndex].name);
+
+//Now Console.log friends
+console.log(friends);
+
+//Lets use bracket notation add the friends list as a property also named friends on one of the animals in the animals array
+animals[0]['friends'] = friends;
+
+//And again Console.log
+console.log(animals);
 
 
 
